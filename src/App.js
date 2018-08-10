@@ -1,10 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { ConnectedRouter } from 'connected-react-router';
-import routes from './routes';
+import Layout from './components/Layout';
 
 const App = ({ history }) => {
-  return <ConnectedRouter history={history}>{routes}</ConnectedRouter>;
+  return (
+    <ConnectedRouter history={history}>
+      <Layout />
+    </ConnectedRouter>
+  );
 };
 
 App.propTypes = {
