@@ -6,7 +6,7 @@ const NavBar = () => (
   <Navbar>
     <Navbar.Header>
       <Navbar.Brand>
-        <Link to="/">Logo/Home</Link>
+        <Link to="/" />
       </Navbar.Brand>
     </Navbar.Header>
     <Nav>
