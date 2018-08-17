@@ -1,13 +1,12 @@
 {
   "name": "minimal-react-redux-router-webpack-less-boilerplate",
   "version": "1.0.0",
-  "description":
-    "Basic setup for creating a React + Redux app with React Router & React Bootstrap/Less styles assembled with Webpack.",
+  "description": "Basic setup for creating a React + Redux app with React Router & React Bootstrap/Less styles assembled with Webpack.",
   "main": "main.js",
   "scripts": {
-    "start-dev":
-      "webpack -d && webpack-dev-server --config ./webpack.config.js --mode development",
-    "start": "webpack -p --config ./webpack.config.js --mode production",
+    "start-dev": "webpack -d && webpack-dev-server --config ./webpack.config.js --mode development",
+    "build-prod": "webpack -p --config ./webpack.config.js --mode production",
+    "start": "npm run build-prod && node p-server.js",
     "test": "echo \"No test specified\" && exit 0"
   },
   "keywords": [],
@@ -35,6 +34,7 @@
     "babel-preset-env": "^1.7.0",
     "bootstrap-less": "^3.3.8",
     "connected-react-router": "^4.3.0",
+    "express": "^4.16.3",
     "history": "^4.7.2",
     "mini-css-extract-plugin": "^0.4.1",
     "prop-types": "^15.6.2",
